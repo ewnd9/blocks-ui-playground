@@ -986,13 +986,13 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@blocks/blocks@0.0.35", "@blocks/blocks@^0.0.35":
-  version "0.0.35"
-  resolved "https://registry.yarnpkg.com/@blocks/blocks/-/blocks-0.0.35.tgz#6eba5edfe7d3af63aea390c5c1f1a633da12b398"
-  integrity sha512-a0Gq7EZ21e1OZkGH0ivE9A+h4MmSurBb8RoR5gBdDO6IchltrmeB7bLtRYRTXNQCFT9mNywcvoZ+8/+hek7grw==
+"@blocks/blocks@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@blocks/blocks/-/blocks-0.0.38.tgz#ef1ba041e7d4ca9c5a5cec001d0853651147c87d"
+  integrity sha512-HOTHw+v3kWa+acC1r/kXosLTYMSbrTYJIw3opiAHJGwXFGXgJGxqIMB7OtaqttHHSfl42kize+tI7DdnKcU25w==
   dependencies:
-    "@blocks/blocks" "^0.0.35"
-    property-controls "^0.0.35"
+    "@blocks/blocks" "^0.0.38"
+    property-controls "^0.0.38"
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -8412,6 +8412,11 @@ property-controls@^0.0.35:
   version "0.0.35"
   resolved "https://registry.yarnpkg.com/property-controls/-/property-controls-0.0.35.tgz#5910d1c0811e351d68eecac9d82cf2d3327890dd"
   integrity sha512-SrrBG7hjllBdAZ++kKsHhXL5/8DeGbinCozbaFVQuHT9Upj4n7ADR+xk3Hv0ReRIZnNO0iZNnC4mc6QOYemAPw==
+
+property-controls@^0.0.38:
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/property-controls/-/property-controls-0.0.38.tgz#c73e1b3c1dd43490dd6890498ca30a69abf7ad57"
+  integrity sha512-d0+TkFkTcaJUiaGvJBexutvH+/gFaBHRoAYo2C+al3t2ewnQ1cDmMqZY5aYrS7JL8NrWxoX1JoADcLe7w9t14A==
 
 proxy-addr@~2.0.5:
   version "2.0.5"

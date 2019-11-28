@@ -19,4 +19,4 @@ export default () => (
 )
 `;
 
-export const Editor = () => <BlocksEditor src={JSX} />;
+export const Editor = () => <BlocksEditor src={JSX} blocks={[]} />;

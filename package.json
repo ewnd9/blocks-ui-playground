@@ -6,7 +6,7 @@
   "main": "src/index.tsx",
   "dependencies": {
     "@babel/core": "7.7.4",
-    "@blocks/blocks": "0.0.35",
+    "@blocks/blocks": "^0.0.38",
     "@mdx-js/react": "1.5.1",
     "blocks-ui": "0.0.35",
     "react": "16.8.4",
