@@ -1,5 +1,6 @@
-import React from "react";
-import BlocksEditor from "blocks-ui";
+import React from 'react';
+import BlocksEditor from 'blocks-ui';
+import * as defaultBlocks from '@blocks/blocks';
 
 const JSX = `
 import React from 'react'
@@ -19,4 +20,8 @@ export default () => (
 )
 `;
 
-export const Editor = () => <BlocksEditor src={JSX} blocks={[]} />;
+const customBlocks = {};
+
+export const Editor = () => (
+  <BlocksEditor src={JSX} blocks={{...defaultBlocks, ...customBlocks}} />
+);

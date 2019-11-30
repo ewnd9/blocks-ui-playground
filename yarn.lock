@@ -986,13 +986,13 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@blocks/blocks@^0.0.38":
-  version "0.0.38"
-  resolved "https://registry.yarnpkg.com/@blocks/blocks/-/blocks-0.0.38.tgz#ef1ba041e7d4ca9c5a5cec001d0853651147c87d"
-  integrity sha512-HOTHw+v3kWa+acC1r/kXosLTYMSbrTYJIw3opiAHJGwXFGXgJGxqIMB7OtaqttHHSfl42kize+tI7DdnKcU25w==
+"@blocks/blocks@^0.0.39":
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@blocks/blocks/-/blocks-0.0.39.tgz#fb4aa67701b268d67bf66d7770ba4d8b8f9f9b27"
+  integrity sha512-opYWv6nVj/fpzq8zfiQju7jvXUWJHsAUBdzDOO9i08BPtGk4ndsl4uL/6fyrnvPpHiJVuMOwUWNTRSWTOgp8ig==
   dependencies:
-    "@blocks/blocks" "^0.0.38"
-    property-controls "^0.0.38"
+    "@blocks/blocks" "^0.0.39"
+    property-controls "^0.0.39"
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -2314,10 +2314,10 @@ binary-extensions@^1.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-1.13.1.tgz#598afe54755b2868a5330d2aff9d4ebb53209b65"
   integrity sha512-Un7MIEDdUC5gNpcGDV97op1Ywk748MpHcFTHoYs6qnj1Z3j7I53VG3nwZhKzoBZmbdRNnb6WRdFlwl7tSDuZGw==
 
-blocks-ui@0.0.35:
-  version "0.0.35"
-  resolved "https://registry.yarnpkg.com/blocks-ui/-/blocks-ui-0.0.35.tgz#df6fa4c60d55aa74377451bb7f947c8d57f3c41b"
-  integrity sha512-7ge5pCCS9IZJNAOZZFpckIQ9I91dgajxOfYbglVYHplemFER2uypjmfC8VaN+j2P6BRWYjnkD98KbzAGkyJFsA==
+blocks-ui@^0.0.39:
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/blocks-ui/-/blocks-ui-0.0.39.tgz#476188004f91e256a26f04d0d38076233a8251ee"
+  integrity sha512-F/fOrp05TK9BUlVP/6zo4LBnSIb4Lg5yxH52QEFozGUPTegZ6MyXByu0OVsCkj+zdZtSzHAwZvYeB8pSA73zQA==
   dependencies:
     "@babel/plugin-syntax-jsx" "^7.2.0"
     "@babel/plugin-transform-react-jsx" "^7.7.0"
@@ -2328,7 +2328,7 @@ blocks-ui@0.0.35:
     "@theme-ui/editor" "^0.2.49"
     "@theme-ui/presets" "^0.2.44"
     prettier "^1.19.1"
-    property-controls "^0.0.35"
+    property-controls "^0.0.39"
     react-beautiful-dnd "^12.1.1"
     react-feather "^2.0.3"
     theme-ui "^0.2.49"
@@ -8408,15 +8408,10 @@ prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
-property-controls@^0.0.35:
-  version "0.0.35"
-  resolved "https://registry.yarnpkg.com/property-controls/-/property-controls-0.0.35.tgz#5910d1c0811e351d68eecac9d82cf2d3327890dd"
-  integrity sha512-SrrBG7hjllBdAZ++kKsHhXL5/8DeGbinCozbaFVQuHT9Upj4n7ADR+xk3Hv0ReRIZnNO0iZNnC4mc6QOYemAPw==
-
-property-controls@^0.0.38:
-  version "0.0.38"
-  resolved "https://registry.yarnpkg.com/property-controls/-/property-controls-0.0.38.tgz#c73e1b3c1dd43490dd6890498ca30a69abf7ad57"
-  integrity sha512-d0+TkFkTcaJUiaGvJBexutvH+/gFaBHRoAYo2C+al3t2ewnQ1cDmMqZY5aYrS7JL8NrWxoX1JoADcLe7w9t14A==
+property-controls@^0.0.39:
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/property-controls/-/property-controls-0.0.39.tgz#f6196839ee334b2b9ee35d81551df476dc1b633a"
+  integrity sha512-Njbj0rdKmLVoq8D6BLmh46e+6eB/ew2CXM6GwZRisVi1XgF/xOs7KcXi5a+ftkPjMEIKKBzVQ13zo/HYWervJA==
 
 proxy-addr@~2.0.5:
   version "2.0.5"
