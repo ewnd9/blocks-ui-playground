@@ -1,6 +1,7 @@
 import React from 'react';
 import BlocksEditor from 'blocks-ui';
 import * as defaultBlocks from '@blocks/blocks';
+import {HeaderOther} from './blocks/header-other-block';
 
 const JSX = `
 import React from 'react'
@@ -20,8 +21,9 @@ export default () => (
 )
 `;
 
-const customBlocks = {};
+const customBlocks = {
+  HeaderOther,
+};
+const blocks = { ...defaultBlocks, ...customBlocks };
 
-export const Editor = () => (
-  <BlocksEditor src={JSX} blocks={{...defaultBlocks, ...customBlocks}} />
-);
+export const Editor = () => <BlocksEditor src={JSX} blocks={blocks} />;
