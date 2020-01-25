@@ -1,6 +1,6 @@
 import React from 'react';
 import BlocksEditor from 'blocks-ui';
-import * as defaultBlocks from '@blocks/blocks';
+import * as defaultBlocks from '@blocks/react';
 import { HeaderOther } from './blocks/header-other-block';
 import { CardBlock } from './blocks/material/card/card-block';
 
@@ -32,6 +32,6 @@ export const Editor = () => (
   <BlocksEditor
     src={JSX}
     blocks={blocks}
-    onChange={code => console.log({ code })}
+    onChange={code => console.log(code)}
   />
 );
