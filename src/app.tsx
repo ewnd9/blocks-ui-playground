@@ -6,6 +6,7 @@ import debounce from 'lodash/debounce';
 
 import { HeaderOther } from './blocks/header-other-block';
 import { CardBlock } from './blocks/material/card/card-block';
+import { parseAst } from './ast';
 
 const JSX = getInitialJSX();
 const customBlocks = {
@@ -17,18 +18,34 @@ const setHashDebounced = debounce(hash => {
   location.hash = hash;
 });
 
-export const Editor = () => (
-  <BlocksEditor
-    src={JSX}
-    blocks={blocks}
-    onChange={code => {
-      const hash = qs.stringify({code: encodeURIComponent(code)});
+let code;
 
-      if (hash !== location.hash) {
-        setHashDebounced(hash);
-      }
-    }}
-  />
+export const Editor = () => (
+  <div style={{ position: 'relative' }}>
+    <button
+      style={{ position: 'absolute', left: '50%' }}
+      onClick={e => {
+        console.log(parseAst(code));
+      }}
+    >
+      copy json
+    </button>
+
+    <div>
+      <BlocksEditor
+        src={JSX}
+        blocks={blocks}
+        onChange={_code => {
+          code = _code;
+          const hash = qs.stringify({ code: encodeURIComponent(code) });
+
+          if (hash !== location.hash) {
+            setHashDebounced(hash);
+          }
+        }}
+      />
+    </div>
+  </div>
 );
 
 function getInitialJSX() {
@@ -44,20 +61,13 @@ function getInitialJSX() {
   }
 
   return `
-      import React from 'react'
-      import { HeaderBasic } from '@blocks/blocks'
-
-      export default () => (
-        <Blocks.Root>
-          <HeaderBasic>
-            <HeaderBasic.Logo to="/">Hello</HeaderBasic.Logo>
-            <HeaderBasic.Nav>
-              <HeaderBasic.Link to="/about">About</HeaderBasic.Link>
-              <HeaderBasic.Link to="/blog">Blog</HeaderBasic.Link>
-              <HeaderBasic.Link to="/contact">Contact</HeaderBasic.Link>
-            </HeaderBasic.Nav>
-          </HeaderBasic>
-        </Blocks.Root>
-      )
-    `;
+    import React from "react";
+    export default () => (
+      <Blocks.Root>
+        <CardBlock text="Card Block"></CardBlock>
+      </Blocks.Root>
+    );
+  `;
 }
+
+
