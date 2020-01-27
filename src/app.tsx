@@ -24,7 +24,7 @@ export const Editor = () => (
   <div style={{ position: 'relative' }}>
     <button
       style={{ position: 'absolute', left: '50%' }}
-      onClick={e => {
+      onClick={() => {
         console.log(parseAst(code));
       }}
     >
@@ -64,7 +64,7 @@ function getInitialJSX() {
     import React from "react";
     export default () => (
       <Blocks.Root>
-        <CardBlock text="Card Block"></CardBlock>
+        <CardBlock text="Text from the Block"></CardBlock>
       </Blocks.Root>
     );
   `;
